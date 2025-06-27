@@ -21,7 +21,6 @@ class RegisterModal(Modal):
         await registerUser(interaction.user.id, self.nickname.value, self.gameId.value, self.device.value, self.serial_number.value)
         await interaction.response.send_message("Вы успешно зарегистрированы!")
 
-
 class RegisterCog(commands.Cog):
     def __init__(self, bot : commands.Bot):
         self.bot = bot

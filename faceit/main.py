@@ -19,7 +19,6 @@ intents.members = True
 
 bot = commands.Bot(command_prefix="!", intents = intents)
 
-
 cogs = ['register']
 
 async def setup_hook():

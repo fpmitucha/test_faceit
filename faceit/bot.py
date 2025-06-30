@@ -19,7 +19,7 @@ intents.members = True
 
 bot = commands.Bot(command_prefix="!", intents = intents)
 
-cogs = ['register']
+cogs = ['register', 'rules', 'helper_commands', 'monitor_lobby_voices']
 
 async def setup_hook():
     for cog in cogs:

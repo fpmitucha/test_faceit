@@ -53,6 +53,5 @@ class RegisterCog(commands.Cog):
     async def ping(self, ctx : commands.Context):
         await ctx.channel.send("Pong!")
     
-
 async def setup(bot):
     await bot.add_cog(RegisterCog(bot)) 

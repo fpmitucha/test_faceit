@@ -21,9 +21,11 @@ async def InitDb():
                 nickname VARCHAR(50),
                 game_id TEXT NOT NULL,
                 device TEXT NOT NULL,
-                serial_number TEXT NOT NULL
+                serial_number TEXT NOT NULL,
+                elo INT DEFAULT 0,
+                balance BIGINT DEFAULT 0
             )
-        ''')
+        ''') 
 
 async def CheckIfUserExists(discord_id):
     async with pool.acquire() as connection:

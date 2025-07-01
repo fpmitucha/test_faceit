@@ -37,7 +37,7 @@ class RegisterCog(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        print(self.bot.user)
+        print("\033[34mLogged without any issues\033[0m")
 
         channel = discord.utils.get(self.bot.get_guild(1383163443636338830).text_channels, name = 'register-user')
 

@@ -11,7 +11,7 @@ class RulesCog(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         rule_channels = discord.utils.get(self.bot.get_guild(1383163443636338830).text_channels, name = 'rules')
-
+ 
         embed = discord.Embed(
             title='Правила'
         )

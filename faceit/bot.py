@@ -12,7 +12,9 @@ logger = logging.basicConfig(
     datefmt='%H:%M:%S'
 )
 
-intents = discord.Intents.all()
+#don't forget to change the token in .env
+
+intents = discord.Intents.default()
 
 intents.message_content = True
 intents.members = True
